@@ -5,7 +5,21 @@
     box-sizing: border-box;
     font-family: "Funnel Display", sans-serif;
 }
-header{
-    background-image: url(../img/dr4.jpg);
-    height: 400vh;
+.index-header{
+background-image: url(../img/fondo.jpg);
+height: 60vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.header-btn{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.3rem 2rem;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: 10rem;
+}
+.fondo-osucro{
+    background-color: rgba(0, 0, 0, 0.493);
 }
