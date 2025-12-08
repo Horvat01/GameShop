@@ -29,7 +29,7 @@
 
 main {
     text-align: center;
-    background-image: url(../img/istockphoto-1352613521-612x612.jpg);
+    /* background-image: url(../img/istockphoto-1352613521-612x612.jpg); */
 }
 
 .art {
@@ -56,4 +56,23 @@ main {
 .footer-icon:hover {
     color: #4B00FF;
     /* tono violeta-azul */
+}
+
+/* SEGUNDA PAGINA */
+@media (max-width: 576px) {
+
+    .card {
+        gap: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    navbar-brand {
+        font-size: 1.2rem;
+    }
 }
