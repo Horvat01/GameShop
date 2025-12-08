@@ -5,14 +5,16 @@
     box-sizing: border-box;
     font-family: "Funnel Display", sans-serif;
 }
-.index-header{
-background-image: url(../img/fondo.jpg);
-height: 60vh;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+
+.index-header {
+    background-image: url(../img/fondo.jpg);
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.header-btn{
+
+.header-btn {
     background-color: rgb(0, 0, 0);
     border: none;
     padding: 0.3rem 2rem;
@@ -20,6 +22,38 @@ background-position: center;
     height: 3.5rem;
     width: 10rem;
 }
-.fondo-osucro{
+
+.fondo-osucro {
     background-color: rgba(0, 0, 0, 0.493);
+}
+
+main {
+    text-align: center;
+    background-image: url(../img/istockphoto-1352613521-612x612.jpg);
+}
+
+.art {
+    width: 40rem;
+    max-width: 100%;
+}
+
+.logo-index {
+    width: 30rem;
+}
+
+.footer {
+    background-color: #0A0A1A;
+    /* fondo oscuro gamer */
+}
+
+.footer-icon {
+    font-size: 2rem;
+    color: #8A00FF;
+    /* violeta neon */
+    transition: 0.3s ease;
+}
+
+.footer-icon:hover {
+    color: #4B00FF;
+    /* tono violeta-azul */
 }
