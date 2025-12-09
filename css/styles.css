@@ -60,7 +60,10 @@ main {
 
 /* SEGUNDA PAGINA */
 @media (max-width: 576px) {
-
+    .main-index2{
+        display: flex;
+        flex-direction: row;
+    }
     .card {
         gap: 20px;
         padding: 10px;
