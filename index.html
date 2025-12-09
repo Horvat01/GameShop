@@ -20,32 +20,38 @@
     <header class="index-header  text-light fixed-top position-relative">
         <div class="fondo-osucro position-absolute w-100 h-100">
             <nav class="navbar navbar-expand-lg navbar-dark bg-violeta w-100">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">GAME SHOP</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">GAME SHOP</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/index2.html">Articulos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/index3.html">Equipos</a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/index2.html">Articulos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/index3.html">Equipos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/index4.html">Perifericos</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
             <div class=" header-contenido d-flex flex-column p-5 m-5">
                 <h1 class="d-flex flex-colum align-items-center fs-2">Bienvenidos a GameShop </h1>
-                <p class="fs-6">Game Shop es tu tienda gamer de confianza. Encontrá todo lo que necesitás para llevar tu experiencia al siguiente nivel: periféricos, consolas, componentes, sillas y accesorios de las mejores marcas. Nuestro objetivo es ofrecerte calidad, rendimiento y los mejores precios, todo en un solo lugar. ¡Equipate como un verdadero gamer y dominá cada partida con Game Shop</p>
+                <p class="fs-6">Game Shop es tu tienda gamer de confianza. Encontrá todo lo que necesitás para llevar tu
+                    experiencia al siguiente nivel: periféricos, consolas, componentes, sillas y accesorios de las
+                    mejores marcas. Nuestro objetivo es ofrecerte calidad, rendimiento y los mejores precios, todo en un
+                    solo lugar. ¡Equipate como un verdadero gamer y dominá cada partida con Game Shop</p>
                 <button class=" header-btn btn btn-primary btn-sm">Contactanos</button>
             </div>
         </div>
@@ -92,21 +98,49 @@
 
     <section class=" section-index mt-5 mb-5 p-5">
         <h3>UNETE PARA RECIBIR DESCUENTOS</h3>
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">No compartas tu email con nadie.</div>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check</label>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
         </form>
     </section>
     <footer class="footer text-center text-light py-4 mt-3">
