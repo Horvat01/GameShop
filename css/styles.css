@@ -6,64 +6,150 @@
     font-family: "Funnel Display", sans-serif;
 }
 
-.index-header {
-    background-image: url(../img/fondo.jpg);
-    height: 65vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+@media (min-width: 480px) {
+
+    .index-header {
+        background-image: url(../img/fondo.jpg);
+        height: 65vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header-btn {
+        background-color: rgb(0, 0, 0);
+        border: none;
+        padding: 0.3rem 2rem;
+        border-radius: 0.5rem;
+        height: 3.5rem;
+        width: 10rem;
+    }
+
+    .fondo-osucro {
+        background-color: rgba(0, 0, 0, 0.493);
+    }
+
+    main {
+        text-align: center;
+        padding: 1.5rem;
+
+    }
+
+    .art {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 28rem;
+    }
+
+    .logo-index {
+        width: 80%;
+        max-width: 20rem;
+    }
+
+    .footer {
+        background-color: #0A0A1A;
+        padding: 2rem 0;
+        /* fondo oscuro gamer */
+    }
+
+    .footer-icon {
+        font-size: 2rem;
+        color: #8A00FF;
+        /* violeta neon */
+        transition: 0.3s ease;
+    }
+
+    .footer-icon:hover {
+        color: #4B00FF;
+        /* tono violeta-azul */
+    }
 }
 
-.header-btn {
-    background-color: rgb(0, 0, 0);
-    border: none;
-    padding: 0.3rem 2rem;
-    border-radius: 0.5rem;
-    height: 3.5rem;
-    width: 10rem;
+@media (min-width: 480px) {
+    .index-header {
+        height: 65vh;
+    }
+
+    .logo-index {
+        max-width: 25rem;
+    }
 }
 
-.fondo-osucro {
-    background-color: rgba(0, 0, 0, 0.493);
-}
+@media (min-width: 992px) {
 
-main {
-    text-align: center;
-    /* background-image: url(../img/istockphoto-1352613521-612x612.jpg); */
-}
+    .header-contenido {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
-.art {
-    width: 40rem;
-    max-width: 100%;
-}
+    .main-index {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        text-align: left;
+        padding: 3rem;
+    }
 
-.logo-index {
-    width: 30rem;
-}
+    .art {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
 
-.footer {
-    background-color: #0A0A1A;
-    /* fondo oscuro gamer */
-}
+    .main-index article img {
+        max-width: 600px;
+    }
 
-.footer-icon {
-    font-size: 2rem;
-    color: #8A00FF;
-    /* violeta neon */
-    transition: 0.3s ease;
-}
+    .main-index article p {
+        margin: 0;
+        line-height: 1.6rem;
+        text-align: justify;
+    }
 
-.footer-icon:hover {
-    color: #4B00FF;
-    /* tono violeta-azul */
+    .main-index h2 {
+        margin-top: 10rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .main-index .colum {
+        width: 40%;
+    }
+
+    #carouselExampleSlidesOnly {
+        max-width: 100%;
+        max-height: 600px;
+        margin: 0 auto;
+    }
+
+    #carouselExampleSlidesOnly img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    /* .section-index h3 {
+        width: 100%;
+        text-align: center;
+
+    } */
+
+    .section form {
+        max-width: 600px;
+    }
 }
 
 /* SEGUNDA PAGINA */
 @media (max-width: 576px) {
-    .main-index2{
+    .main-index2 {
         display: flex;
         flex-direction: row;
     }
+
     .card {
         gap: 20px;
         padding: 10px;
@@ -75,7 +161,7 @@ main {
         height: auto;
     }
 
-    navbar-brand {
+    .navbar-brand {
         font-size: 1.2rem;
     }
 }
