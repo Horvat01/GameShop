@@ -30,8 +30,8 @@
         background-color: rgba(0, 0, 0, 0.493);
     }
 
-    main {
-        text-align: center;
+    .main-index {
+        text-align: left;
         padding: 1.5rem;
 
     }
@@ -151,9 +151,16 @@
         background-repeat: no-repeat;
         background-position: cover;
     } */
-
-    .section-index form {
+    
+    .form-index {
         max-width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .form-index h3{
+        margin-bottom: 4rem;
     }
 }
 
