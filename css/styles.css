@@ -192,16 +192,16 @@
 @media (min-width: 992px) {
    
     .section-index2 article{
-
         margin: 1rem;
-
     }
 
     .main-index2 article:hover {
         transform: scale(1.05);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     }
-
+   .main-index2 .card-text{
+    text-align: justify;
+   }
 }
 
 /* TERCERA PAGINA */
