@@ -168,6 +168,10 @@
   }
 }
 /* TERCERA PAGINA */
+.page-link {
+  color: #8A00FF;
+}
+
 @media (min-width: 480px) {
   .index-section3 .card img {
     height: 200px;
@@ -193,12 +197,14 @@
   }
 }
 /* PAGINA CUATRO */
+.header-index4 {
+  margin: 0;
+  padding: 0;
+}
+
 .main-index4 {
   text-align: center;
-  background-image: url(../img/gradient_2_16.jpg);
-  background-position: cover;
-  background-repeat: no-repeat;
-  color: #ffffff;
+  color: #8A00FF;
 }
 
 .grid-conenedor {
