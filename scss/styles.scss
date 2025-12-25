@@ -246,7 +246,41 @@
     background-image: url(../img/gradient_2_16.jpg);
     background-position: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+
     color: variables.$blanco-full;
 
+}
+
+.grid-conenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.carta img{
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+}
+
+@media (min-width: 480px) {
+    .grid-conenedor{
+        margin: 4rem;
+        grid-template-columns: repeat(2fr, 1fr);
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .card img{
+        height: 200px;
+    }
+}
+@media (min-width: 992px) {
+    .grid-conenedor{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .destacada{
+        grid-column: span 2;
+    }
 }
