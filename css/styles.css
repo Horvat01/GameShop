@@ -15,47 +15,6 @@
   transition: 0.3s ease;
 }
 
-.card {
-  border-radius: 1rem;
-  overflow: hidden;
-  transition: 0.3s ease;
-}
-
-.footer {
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-}
-
-.footer-icon {
-  font-size: 2rem;
-  transition: 0.3s ease;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: "Funnel Display", sans-serif;
-}
-
-.header-contenido {
-  flex-direction: column;
-}
-
-.form-index {
-  flex-direction: column;
-}
-
-.footer {
-  padding: 2rem 0;
-}
-
-.footer-icon {
-  color: #8A00FF;
-}
-
 @media (min-width: 480px) {
   .index-header {
     background-image: url(../img/fondo.jpg);
@@ -100,17 +59,14 @@
   .footer {
     background-color: #000000;
     padding: 2rem 0;
-    /* fondo oscuro gamer */
   }
   .footer-icon {
     font-size: 2rem;
     color: #8A00FF;
-    /* violeta neon */
     transition: 0.3s ease;
   }
   .footer-icon:hover {
     color: #4B00FF;
-    /* tono violeta-azul */
   }
 }
 @media (min-width: 480px) {
@@ -181,10 +137,6 @@
   }
 }
 /* SEGUNDA PAGINA */
-.footer-icon {
-  color: #8A00FF;
-}
-
 @media (max-width: 576px) {
   .main-index2 {
     display: flex;
@@ -215,11 +167,6 @@
     text-align: justify;
   }
 }
-/* TERCERA PAGINA */
-.page-link {
-  color: #8A00FF;
-}
-
 @media (min-width: 480px) {
   .index-section3 .card img {
     height: 200px;
@@ -244,7 +191,56 @@
     box-shadow: 0 0 20px rgba(120, 0, 255, 0.5);
   }
 }
-/* PAGINA CUATRO */
+/* CUARTA PAGINA */
+@media (min-width: 480px) {
+  .grid-conenedor {
+    margin: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  .card img {
+    height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .grid-conenedor {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .destacada {
+    grid-column: span 2;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Funnel Display", sans-serif;
+}
+
+.header-contenido {
+  flex-direction: column;
+}
+
+.form-index {
+  flex-direction: column;
+}
+
+.footer {
+  padding: 2rem 0;
+}
+
+.footer-icon {
+  color: #8A00FF;
+}
+
+/* TERCERA PAGINA */
+.page-link {
+  color: #8A00FF;
+}
+
+/* CUARTA PAGINA */
 .header-index4 {
   margin: 0;
   padding: 0;
@@ -266,26 +262,6 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-}
-
-@media (min-width: 480px) {
-  .grid-conenedor {
-    margin: 4rem;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    padding: 2rem;
-  }
-  .card img {
-    height: 200px;
-  }
-}
-@media (min-width: 992px) {
-  .grid-conenedor {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .destacada {
-    grid-column: span 2;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

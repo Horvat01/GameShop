@@ -1,7 +1,10 @@
 @use "./utilities/variables";
 @import "./utilities/mixins.scss";
 @import "./utilities/extends";
-
+@import "./mq/mq1";
+@import "./mq/mq2";
+@import "./mq/mq3";
+@import "./mq/mq4";
 
 * {
     margin: 0;
@@ -33,244 +36,14 @@
     color: variables.$violeta-pleno;
 }
 
-@media (min-width: 480px) {
-
-    .index-header {
-        background-image: url(../img/fondo.jpg);
-        height: 65vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .header-btn {
-        background-color: variables.$violeta-pleno;
-        border: none;
-        padding: 0.3rem 2rem;
-        border-radius: 0.5rem;
-        @include espacio (10rem, 3.5rem);
-    }
-
-    .header-btn:hover {
-        background-color: variables.$morado-pleno;
-    }
-
-    .fondo-osucro {
-        background-color: variables.$negro-fondo;
-    }
-
-    .main-index {
-        text-align: left;
-        padding: 1.5rem;
-
-    }
-
-    .art {
-        width: 100%;
-        margin: 0 auto;
-        max-width: 28rem;
-    }
-
-    .logo-index {
-        width: 80%;
-        max-width: 20rem;
-    }
-
-    .btn-primary {
-        background-color: variables.$violeta-pleno;
-    }
-
-    .btn-primary :hover {
-        background-color: variables.$morado-pleno;
-    }
-
-    .footer {
-        background-color: variables.$negro-full;
-        padding: 2rem 0;
-        /* fondo oscuro gamer */
-    }
-
-    .footer-icon {
-        font-size: 2rem;
-        color: variables.$violeta-pleno;
-        /* violeta neon */
-        transition: 0.3s ease;
-    }
-
-    .footer-icon:hover {
-        color: variables.$morado-pleno;
-        /* tono violeta-azul */
-    }
-}
-
-@media (min-width: 480px) {
-    .index-header {
-        height: 65vh;
-    }
-
-    .logo-index {
-        max-width: 25rem;
-    }
-}
-
-@media (min-width: 992px) {
-
-    .header-contenido {
-        height: 100%;
-        text-align: center;
-    }
-
-    .main-index {
-        display: flex;
-        justify-content: center;
-        @include separacion(40px, 3rem);
-        text-align: left;
-        background-image: url(../img/istockphoto-1352613521-612x612.jpg);
-        background-repeat: no-repeat;
-        background-position: cover;
-    }
-
-    .art {
-        @include espacio (100%, 250px);
-        object-fit: cover;
-        border-radius: 1rem;
-    }
-
-    .main-index article img {
-        max-width: 600px;
-    }
-
-    .main-index article img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px variables.$shadow-black;
-    }
-
-    .main-index article p {
-        margin: 0;
-        line-height: 1.6rem;
-        text-align: justify;
-    }
-
-    .main-index h2 {
-        margin-top: 10rem;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .main-index .colum {
-        width: 40%;
-    }
-
-    #carouselExampleSlidesOnly {
-        max-width: 100%;
-        max-height: 600px;
-        margin: 0 auto;
-    }
-
-    #carouselExampleSlidesOnly img {
-        height: 400px;
-        object-fit: cover;
-    }
-
-    .form-index {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .form-index h3 {
-        margin-bottom: 4rem;
-    }
-}
-
-/* SEGUNDA PAGINA */
-.card {
-    @extend %card-base;
-}
-
-.footer {
-    @extend %footer-base;
-}
-
-.footer-icon {
-    @extend %icon-base;
-    color: variables.$violeta-pleno;
-}
-
-@media (max-width: 576px) {
-
-    .main-index2 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .main-index2 .card {
-        @include separacion(20px, 10px);
-        text-align: center;
-    }
-
-    .main-index2 .card img {
-        @include espacio (100%, auto);
-    }
-
-    .navbar-brand {
-        font-size: 1.2rem;
-    }
-}
-
-@media (min-width: 992px) {
-
-    .section-index2 article {
-        margin: 1rem;
-    }
-
-    .main-index2 article:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px variables.$shadow-black;
-    }
-
-    .main-index2 .card-text {
-        text-align: justify;
-    }
-}
-
 /* TERCERA PAGINA */
+
 .page-link {
     color: variables.$violeta-pleno;
 }
 
-@media (min-width: 480px) {
+/* CUARTA PAGINA */
 
-    .index-section3 .card img {
-        height: 200px;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 992px) {
-
-    .index-section3 .card img {
-        height: 300px;
-        object-fit: cover;
-    }
-
-    .index-section3 .card {
-        min-height: 420px;
-    }
-
-    .index-section3 .card {
-        background: variables.$blanco-full;
-        border-radius: 15px;
-        transition: 0.3s ease;
-    }
-
-    .index-section3 .card:hover {
-        transform: scale(1.04);
-        box-shadow: 0 0 20px variables.$shadow-violeta;
-    }
-}
-
-/* PAGINA CUATRO */
 .header-index4 {
     margin: 0;
     padding: 0;
@@ -291,26 +64,4 @@
 .carta img {
     @include espacio (100%, 200px);
     object-fit: cover;
-}
-
-@media (min-width: 480px) {
-    .grid-conenedor {
-        margin: 4rem;
-        grid-template-columns: repeat(2, 1fr);
-        @include separacion(1.5rem, 2rem);
-    }
-
-    .card img {
-        height: 200px;
-    }
-}
-
-@media (min-width: 992px) {
-    .grid-conenedor {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .destacada {
-        grid-column: span 2;
-    }
 }

@@ -1,0 +1,37 @@
+/* SEGUNDA PAGINA */
+@media (max-width: 576px) {
+
+    .main-index2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-index2 .card {
+        @include separacion(20px, 10px);
+        text-align: center;
+    }
+
+    .main-index2 .card img {
+        @include espacio (100%, auto);
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .section-index2 article {
+        margin: 1rem;
+    }
+
+    .main-index2 article:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px variables.$shadow-black;
+    }
+
+    .main-index2 .card-text {
+        text-align: justify;
+    }
+}

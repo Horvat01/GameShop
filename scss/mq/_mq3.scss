@@ -1,0 +1,30 @@
+@media (min-width: 480px) {
+
+    .index-section3 .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .index-section3 .card img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .index-section3 .card {
+        min-height: 420px;
+    }
+
+    .index-section3 .card {
+        background: variables.$blanco-full;
+        border-radius: 15px;
+        transition: 0.3s ease;
+    }
+
+    .index-section3 .card:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 20px variables.$shadow-violeta;
+    }
+}
