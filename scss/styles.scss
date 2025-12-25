@@ -8,6 +8,7 @@
     font-family: "Funnel Display", sans-serif;
 }
 
+// PRIMERA-PAGINA
 
 @media (min-width: 480px) {
 
@@ -26,6 +27,9 @@
         border-radius: 0.5rem;
         height: 3.5rem;
         width: 10rem;
+    }
+    .header-btn:hover{
+        background-color: variables.$morado-pleno;
     }
 
     .fondo-osucro {
@@ -49,6 +53,13 @@
         max-width: 20rem;
     }
 
+    .btn-primary{
+        background-color: variables.$violeta-pleno;
+    }
+    .btn-primary :hover{
+        background-color: variables.$morado-pleno;
+    }
+
     .footer {
         background-color: variables.$negro-full;
         padding: 2rem 0;
@@ -63,7 +74,7 @@
     }
 
     .footer-icon:hover {
-        color: variables.$rojo-pleno;
+        color: variables.$morado-pleno;
         /* tono violeta-azul */
     }
 }
@@ -112,7 +123,7 @@
 
     .main-index article img:hover {
         transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 8px 20px variables.$shadow-black;
     }
 
     .main-index article p {
@@ -143,17 +154,6 @@
         object-fit: cover;
     }
 
-    /* .section-index h3 {
-        width: 100%;
-        text-align: center;
-
-    } */
-    /* .section-index {
-        background-image: url(../img/istockphoto-1352613521-612x612.jpg);
-        background-repeat: no-repeat;
-        background-position: cover;
-    } */
-
     .form-index {
         max-width: 600px;
         display: flex;
@@ -168,6 +168,7 @@
 }
 
 /* SEGUNDA PAGINA */
+
 @media (max-width: 576px) {
     
     .main-index2 {
@@ -199,7 +200,7 @@
 
     .main-index2 article:hover {
         transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 8px 20px variables.$shadow-black;
     }
    .main-index2 .card-text{
     text-align: justify;
@@ -207,6 +208,7 @@
 }
 
 /* TERCERA PAGINA */
+
 @media (min-width: 480px) {
 
     .index-section3 .card img {
@@ -233,7 +235,7 @@
 
     .index-section3 .card:hover {
         transform: scale(1.04);
-        box-shadow: 0 0 20px rgba(120, 0, 255, 0.5);
+        box-shadow: 0 0 20px variables.$shadow-violeta;
     }
 }
 
@@ -245,19 +247,6 @@
     background-position: cover;
     background-repeat: no-repeat;
     height: 70vh;
-    color: #ffffff;
+    color: variables.$blanco-full;
 
 }
-
-/* @media (min-width: 992px) {
-    .main-index3 {
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        grid: 1 1 1 auto;
-    } */
-
-/* .main-index3 section div:hover{
-            transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        } */

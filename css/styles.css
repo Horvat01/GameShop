@@ -22,6 +22,9 @@
     height: 3.5rem;
     width: 10rem;
   }
+  .header-btn:hover {
+    background-color: #4B00FF;
+  }
   .fondo-osucro {
     background-color: rgba(0, 0, 0, 0.5254901961);
   }
@@ -38,8 +41,14 @@
     width: 80%;
     max-width: 20rem;
   }
+  .btn-primary {
+    background-color: #8A00FF;
+  }
+  .btn-primary :hover {
+    background-color: #4B00FF;
+  }
   .footer {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     padding: 2rem 0;
     /* fondo oscuro gamer */
   }
@@ -50,7 +59,7 @@
     transition: 0.3s ease;
   }
   .footer-icon:hover {
-    color: rgb(255, 16, 16);
+    color: #4B00FF;
     /* tono violeta-azul */
   }
 }
@@ -116,16 +125,6 @@
     height: 400px;
     object-fit: cover;
   }
-  /* .section-index h3 {
-      width: 100%;
-      text-align: center;
-
-  } */
-  /* .section-index {
-      background-image: url(../img/istockphoto-1352613521-612x612.jpg);
-      background-repeat: no-repeat;
-      background-position: cover;
-  } */
   .form-index {
     max-width: 600px;
     display: flex;
@@ -202,17 +201,5 @@
   height: 70vh;
   color: #ffffff;
 }
-
-/* @media (min-width: 992px) {
-    .main-index3 {
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        grid: 1 1 1 auto;
-    } */
-/* .main-index3 section div:hover{
-            transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        } */
 
 /*# sourceMappingURL=styles.css.map */
