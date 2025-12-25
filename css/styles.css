@@ -15,7 +15,7 @@
     background-position: center;
   }
   .header-btn {
-    background-color: rgb(0, 0, 0);
+    background-color: #8A00FF;
     border: none;
     padding: 0.3rem 2rem;
     border-radius: 0.5rem;
@@ -23,7 +23,7 @@
     width: 10rem;
   }
   .fondo-osucro {
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: rgba(0, 0, 0, 0.5254901961);
   }
   .main-index {
     text-align: left;
@@ -39,7 +39,7 @@
     max-width: 20rem;
   }
   .footer {
-    background-color: #0A0A1A;
+    background-color: rgb(0, 0, 0);
     padding: 2rem 0;
     /* fondo oscuro gamer */
   }
@@ -50,7 +50,7 @@
     transition: 0.3s ease;
   }
   .footer-icon:hover {
-    color: #4B00FF;
+    color: rgb(255, 16, 16);
     /* tono violeta-azul */
   }
 }

@@ -1,4 +1,4 @@
-@import "./utilities/variables";
+@use "./utilities/variables";
 
 * {
     margin: 0;
@@ -20,7 +20,7 @@
     }
 
     .header-btn {
-        background-color: rgb(0, 0, 0);
+        background-color: variables.$violeta-pleno;
         border: none;
         padding: 0.3rem 2rem;
         border-radius: 0.5rem;
@@ -29,7 +29,7 @@
     }
 
     .fondo-osucro {
-        background-color: rgba(0, 0, 0, 0.493);
+        background-color: variables.$negro-fondo;
     }
 
     .main-index {
@@ -50,20 +50,20 @@
     }
 
     .footer {
-        background-color: #0A0A1A;
+        background-color: variables.$negro-full;
         padding: 2rem 0;
         /* fondo oscuro gamer */
     }
 
     .footer-icon {
         font-size: 2rem;
-        color: #8A00FF;
+        color: variables.$violeta-pleno;
         /* violeta neon */
         transition: 0.3s ease;
     }
 
     .footer-icon:hover {
-        color: #4B00FF;
+        color: variables.$rojo-pleno;
         /* tono violeta-azul */
     }
 }
