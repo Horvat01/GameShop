@@ -1,0 +1,9 @@
+@mixin espacio($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin separacion($g, $p) {
+    gap: $g;
+    padding: $p;
+}

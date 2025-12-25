@@ -1,0 +1,30 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%footer-base {
+    background-color: variables.$negro-full;
+    color: variables.$blanco-full;
+    text-align: center;
+}
+%icon-base {
+    font-size: 2rem;
+    transition: 0.3s ease;
+}
+//  SEGUNDA PAGINA 
+%card-base {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+%footer-base {
+    background-color: variables.$negro-full;
+    color: variables.$blanco-full;
+    text-align: center;
+}
+%icon-base {
+    font-size: 2rem;
+    transition: 0.3s ease;
+}

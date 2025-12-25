@@ -1,9 +1,59 @@
+.form-index, .header-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-icon {
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-icon {
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Funnel Display", sans-serif;
+}
+
+.header-contenido {
+  flex-direction: column;
+}
+
+.form-index {
+  flex-direction: column;
+}
+
+.footer {
+  padding: 2rem 0;
+}
+
+.footer-icon {
+  color: #8A00FF;
 }
 
 @media (min-width: 480px) {
@@ -19,8 +69,8 @@
     border: none;
     padding: 0.3rem 2rem;
     border-radius: 0.5rem;
-    height: 3.5rem;
     width: 10rem;
+    height: 3.5rem;
   }
   .header-btn:hover {
     background-color: #4B00FF;
@@ -74,17 +124,14 @@
 @media (min-width: 992px) {
   .header-contenido {
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
   }
   .main-index {
     display: flex;
     justify-content: center;
     gap: 40px;
-    text-align: left;
     padding: 3rem;
+    text-align: left;
     background-image: url(../img/istockphoto-1352613521-612x612.jpg);
     background-repeat: no-repeat;
     background-position: cover;
@@ -127,9 +174,6 @@
   }
   .form-index {
     max-width: 600px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     margin: 0 auto;
   }
   .form-index h3 {
@@ -137,6 +181,10 @@
   }
 }
 /* SEGUNDA PAGINA */
+.footer-icon {
+  color: #8A00FF;
+}
+
 @media (max-width: 576px) {
   .main-index2 {
     display: flex;
@@ -223,7 +271,7 @@
 @media (min-width: 480px) {
   .grid-conenedor {
     margin: 4rem;
-    grid-template-columns: repeat(2fr, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     padding: 2rem;
   }
